@@ -6,11 +6,14 @@ public class Carta {
     protected Pinta pinta;
     protected Numero numero;
 
-    public Carta(Pinta pinta, Numero numero) {
-        /*
-        Acá deben completar el código del constructor de forma que
-        se asignen los parámetros a las variables de instancia
-        */
+    public Carta(){
+        this.pinta=pinta;
+        this.numero=numero;
+
+    }
+    public Carta(Pinta pintaSeleccionada, Numero numeroSeleccionado){
+        this.numero=numeroSeleccionado;
+        this.pinta=pintaSeleccionada;
     }
 
     public Pinta getPinta() {
@@ -20,6 +23,7 @@ public class Carta {
     public Numero getNumero() {
         return this.numero;
     }
+
 
     @Override
     public boolean equals(Object o) {
