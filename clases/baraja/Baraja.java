@@ -14,10 +14,10 @@ public class Baraja {
     public Baraja() {
         cartas = new ArrayList<>();
         for (Numero numero : Numero.values()) {
-            Carta carta1 = new Corazon(numero, clases.naipe.Pinta.values()[0]);
-            Carta carta2 = new Trebol(numero, clases.naipe.Pinta.values()[1]);
-            Carta carta3 = new Espada(numero, clases.naipe.Pinta.values()[2]);
-            Carta carta4 = new Rombo(numero, clases.naipe.Pinta.values()[3]);
+            Carta carta1 = new Corazon(numero);
+            Carta carta2 = new Trebol(numero);
+            Carta carta3 = new Espada(numero);
+            Carta carta4 = new Rombo(numero);
 
             cartas.add(carta1);
             cartas.add(carta2);
